@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tasteology Birmingham — brunch, coffee and the chemistry of flavour.">
+  <title>Tasteology — The Chemistry of Flavour</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <a class="identity" href="#top" aria-label="Tasteology home">
+      <span class="identity-seal">
+        <span>T</span>
+      </span>
+      <span class="identity-word">
+        TASTEOLOGY
+        <small>THE CHEMISTRY OF FLAVOUR</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="#story">About</a>
+      <a href="#dishes">Menu</a>
+      <a href="#journal">Gallery</a>
+      <a href="#motion">Moments</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-photo-wrap" data-hero-stage>
+        <img
+          class="hero-photo"
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/7b/f4/36/outside.jpg?h=1200&s=1&w=1200"
+          alt="Tasteology exterior on Grove Lane"
+        >
+
+        <div class="hero-photo-shade"></div>
+
+        <div class="ingredient ingredient-a" data-drift="1.2">ESPRESSO</div>
+        <div class="ingredient ingredient-b" data-drift="0.8">FRENCH TOAST</div>
+        <div class="ingredient ingredient-c" data-drift="1.5">PISTACHIO</div>
+        <div class="ingredient ingredient-d" data-drift="0.65">SOURDOUGH</div>
+        <div class="ingredient ingredient-e" data-drift="1.0">BRUNCH</div>
+
+        <div class="hero-address">
+          <span>115 GROVE LANE</span>
+          <span>BIRMINGHAM · B17 0QT</span>
+        </div>
+      </div>
+
+      <div class="hero-title" aria-label="Tasteology">
+        <span class="hero-title-top">TASTE</span>
+        <span class="hero-title-bottom">OLOGY</span>
+      </div>
+
+      <div class="hero-corner-note">
+        <span>BREAKFAST / BRUNCH / COFFEE</span>
+        <span>HARBORNE / BIRMINGHAM</span>
+      </div>
+
+      <a href="#story" class="hero-scroll">
+        <span>DISCOVER TASTEOLOGY</span>
+        <i></i>
+      </a>
+    </section>
+
+    <section class="manifesto section-shell section-space" id="story">
+      <div class="manifesto-index reveal">
+        <span>00 / ABOUT</span>
+        <span>HARBORNE · BIRMINGHAM</span>
+      </div>
+
+      <div class="manifesto-grid">
+        <h1 class="manifesto-title reveal">
+          MADE FOR
+          <em>SLOW MORNINGS.</em>
+        </h1>
+
+        <div class="manifesto-copy reveal reveal-delay">
+          <p>
+            A neighbourhood café in Harborne built around generous breakfast plates,
+            Mediterranean influence and carefully made coffee. Warm timber, greenery
+            and patterned details give the room its unmistakable character.
+          </p>
+
+          <p class="manifesto-small">
+            From upgraded shakshouka and French toast to vegan brunch and pistachio
+            lattes, Tasteology brings familiar brunch favourites together with its own
+            flavour-first personality.
+          </p>
+        </div>
+      </div>
+
+      <div class="chemistry-strip reveal">
+        <span>BREAKFAST</span>
+        <b>+</b>
+        <span>BRUNCH</span>
+        <b>+</b>
+        <span>COFFEE</span>
+        <b>=</b>
+        <strong>THE CHEMISTRY OF FLAVOUR</strong>
+      </div>
+    </section>
+
+    <section class="dish-lab section-space" id="dishes">
+      <div class="section-shell">
+        <div class="section-kicker reveal">
+          <span>01 / SIGNATURES</span>
+          <p>Explore a few Tasteology favourites.</p>
+        </div>
+
+        <div class="dish-layout">
+          <div class="dish-stage reveal">
+            <div class="dish-stage-index">01</div>
+
+            <img
+              id="dish-stage-image"
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/71/f0/cf/caption.jpg?h=1100&s=1&w=1100"
+              alt="Tasteology brunch dish"
+            >
+
+            <div class="dish-stage-caption">
+              <span id="dish-stage-tag">HOT / SAVOURY</span>
+              <strong id="dish-stage-name">UPGRADED SHAKSHOUKA</strong>
+            </div>
+          </div>
+
+          <div class="dish-list reveal reveal-delay">
+            <button
+              class="dish-row is-active"
+              type="button"
+              data-index="01"
+              data-name="UPGRADED SHAKSHOUKA"
+              data-tag="HOT / SAVOURY"
+              data-copy="Tomato, spice, eggs, herbs and bread. The kind of brunch that arrives looking like lunch."
+              data-image="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/71/f0/cf/caption.jpg?h=1100&s=1&w=1100"
+            >
+              <span>01</span>
+              <strong>UPGRADED SHAKSHOUKA</strong>
+              <i>→</i>
+            </button>
+
+            <button
+              class="dish-row"
+              type="button"
+              data-index="02"
+              data-name="FRENCH TOAST"
+              data-tag="SWEET / BRUNCH"
+              data-copy="A dessert-minded breakfast: soft centre, crisp edges and enough excess to justify another coffee."
+              data-image="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/42/79/25/tasteology.jpg?h=1100&s=1&w=1100"
+            >
+              <span>02</span>
+              <strong>FRENCH TOAST</strong>
+              <i>→</i>
+            </button>
+
+            <button
+              class="dish-row"
+              type="button"
+              data-index="03"
+              data-name="ROYAL BREAKFAST"
+              data-tag="ALL DAY / PLATE"
+              data-copy="Eggs, spiced merguez, turkey rashers, guacamole, hummus, beans, hash browns, mushroom and toast."
+              data-image="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/05/ed/b8/caption.jpg?h=1100&s=1&w=1100"
+            >
+              <span>03</span>
+              <strong>ROYAL BREAKFAST</strong>
+              <i>→</i>
+            </button>
+
+            <button
+              class="dish-row"
+              type="button"
+              data-index="04"
+              data-name="PISTACHIO LATTE"
+              data-tag="COFFEE / HOUSE FAVOURITE"
+              data-copy="Creamy, nutty and visually unmistakable — the drink that deserves its own frame."
+              data-image="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/a3/a3/18/caption.jpg?h=1100&s=1&w=1100"
+            >
+              <span>04</span>
+              <strong>PISTACHIO LATTE</strong>
+              <i>→</i>
+            </button>
+
+            <button
+              class="dish-row"
+              type="button"
+              data-index="05"
+              data-name="VEGAN BRUNCH"
+              data-tag="PLANT / ALL DAY"
+              data-copy="Colour, texture and a full plate without treating the vegan option like an afterthought."
+              data-image="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/05/dd/bb/caption.jpg?h=1200&s=1&w=1200"
+            >
+              <span>05</span>
+              <strong>VEGAN BRUNCH</strong>
+              <i>→</i>
+            </button>
+
+            <div class="dish-note">
+              <span>ON THE PLATE</span>
+              <p id="dish-stage-copy">
+                Tomato, spice, eggs, herbs and bread. The kind of brunch that arrives looking like lunch.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="interior-break">
+      <img
+        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/7b/f4/48/inside.jpg?h=1200&s=1&w=1200"
+        alt="Tasteology interior with greenery, wood and patterned seating"
+      >
+      <div class="interior-caption reveal">
+        <span>THE ROOM / 115 GROVE LANE</span>
+        <strong>GREEN / WOOD / BRICK / PATTERN</strong>
+      </div>
+    </section>
+
+    <section class="journal section-shell section-space" id="journal">
+      <div class="section-kicker reveal">
+        <span>02 / TASTEOLOGY IN FRAME</span>
+        <p>Food, coffee and the character of Grove Lane.</p>
+      </div>
+
+      <div class="journal-grid">
+        <button class="journal-shot shot-a reveal" type="button" data-gallery>
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/de/18/aa/caption.jpg?h=1100&s=1&w=1100"
+            alt="Tasteology food photograph"
+          >
+          <span>PLATE STUDY / 01</span>
+        </button>
+
+        <button class="journal-shot shot-b reveal reveal-delay" type="button" data-gallery>
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/7b/f4/58/cakes.jpg?h=1200&s=1&w=1200"
+            alt="Cakes at Tasteology"
+          >
+          <span>COUNTER / SWEET</span>
+        </button>
+
+        <div class="journal-type reveal">
+          <span>T</span>
+          <p>THE<br>CHEMISTRY<br>OF FLAVOUR</p>
+        </div>
+
+        <button class="journal-shot shot-c reveal" type="button" data-gallery>
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/18/c4/af/caption.jpg?h=1100&s=1&w=1100"
+            alt="Tasteology brunch photograph"
+          >
+          <span>BRUNCH / 02</span>
+        </button>
+
+        <div class="journal-quote reveal reveal-delay">
+          <p>Brunch worth slowing down for.</p>
+          <span>115 GROVE LANE / HARBORNE</span>
+        </div>
+
+        <button class="journal-shot shot-d reveal" type="button" data-gallery>
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/8b/80/3d/caption.jpg?h=1200&s=1&w=1200"
+            alt="Tasteology breakfast photograph"
+          >
+          <span>MORNING / 03</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="motion section-space" id="motion">
+      <div class="section-shell">
+        <div class="section-kicker light reveal">
+          <span>03 / A MORNING HERE</span>
+          <p>Coffee, plates and the room in motion.</p>
+        </div>
+
+<div class="motion-layout">
+
+  <div class="motion-title reveal">
+    <span>MORNING</span>
+    <em>AT</em>
+    <span>TASTEOLOGY</span>
+  </div>
+
+
+  <div class="moments-carousel reveal reveal-delay" id="moments-carousel">
+
+    <div class="carousel-stage">
+
+      <button
+        class="carousel-card"
+        type="button"
+        data-carousel-slide
+        aria-label="Pistachio coffee at Tasteology"
+      >
+        <img
+          src="assets/images/moments/moment-1.jpg"
+          alt="Coffee at Tasteology"
+        >
+
+        <span class="carousel-caption">
+          <small>01</small>
+          FIRST POUR
+        </span>
+      </button>
+
+
+      <button
+        class="carousel-card"
+        type="button"
+        data-carousel-slide
+        aria-label="French toast at Tasteology"
+      >
+        <img
+          src="assets/images/moments/moment-2.jpg"
+          alt="French toast at Tasteology"
+        >
+
+        <span class="carousel-caption">
+          <small>02</small>
+          FRENCH TOAST
+        </span>
+      </button>
+
+
+      <button
+        class="carousel-card"
+        type="button"
+        data-carousel-slide
+        aria-label="Tasteology brunch"
+      >
+        <img
+          src="assets/images/moments/moment-3.png"
+          alt="Brunch plate at Tasteology"
+        >
+
+        <span class="carousel-caption">
+          <small>03</small>
+          BRUNCH TABLE
+        </span>
+      </button>
+
+
+      <button
+        class="carousel-card"
+        type="button"
+        data-carousel-slide
+        aria-label="Inside Tasteology"
+      >
+        <img
+          src="assets/images/moments/moment-4.jpg"
+          alt="Tasteology cafe interior"
+        >
+
+        <span class="carousel-caption">
+          <small>04</small>
+          GROVE LANE
+        </span>
+      </button>
+
+
+      <button
+        class="carousel-card"
+        type="button"
+        data-carousel-slide
+        aria-label="Sweet food at Tasteology"
+      >
+        <img
+          src="assets/images/moments/moment-5.jpg"
+          alt="Sweet food at Tasteology"
+        >
+
+        <span class="carousel-caption">
+          <small>05</small>
+          SOMETHING SWEET
+        </span>
+      </button>
+
+    </div>
+
+
+    <div class="carousel-controls">
+
+      <button
+        class="carousel-arrow carousel-prev"
+        type="button"
+        aria-label="Previous image"
+      >
+        ←
+      </button>
+
+
+      <div
+        class="carousel-dots"
+        aria-label="Carousel position"
+      ></div>
+
+
+      <button
+        class="carousel-arrow carousel-next"
+        type="button"
+        aria-label="Next image"
+      >
+        →
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+    <section class="visit section-shell section-space" id="visit">
+      <div class="visit-stamp reveal">
+        <span>T</span>
+        <svg viewBox="0 0 200 200" aria-hidden="true">
+          <defs>
+            <path id="circlePath" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"></path>
+          </defs>
+          <text>
+            <textPath href="#circlePath" startOffset="0%">
+              TASTEOLOGY · THE CHEMISTRY OF FLAVOUR ·
+            </textPath>
+          </text>
+        </svg>
+      </div>
+
+      <div class="visit-main reveal reveal-delay">
+        <div class="section-kicker">
+          <span>04 / VISIT</span>
+          <p>Grove Lane, Birmingham.</p>
+        </div>
+
+        <h2>COME HUNGRY.<br><em>LEAVE SLOWLY.</em></h2>
+
+        <div class="visit-lines">
+          <div>
+            <span>ADDRESS</span>
+            <strong>115 Grove Lane, Birmingham, B17 0QT</strong>
+          </div>
+          <div>
+            <span>PHONE</span>
+            <a href="tel:+441215721211">+44 121 572 1211</a>
+          </div>
+          <div>
+            <span>FOOD</span>
+            <strong>BREAKFAST · LUNCH · BRUNCH</strong>
+          </div>
+        </div>
+
+        <div class="visit-actions">
+          <a
+            class="arrow-link"
+            href="https://www.google.com/maps/search/?api=1&query=115+Grove+Lane+Birmingham+B17+0QT"
+            target="_blank"
+            rel="noreferrer"
+          >
+            OPEN IN MAPS <span>↗</span>
+          </a>
+
+          <a class="arrow-link" href="tel:+441215721211">
+            CALL TASTEOLOGY <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>115 GROVE LANE / HARBORNE</span>
+    <strong>TASTEOLOGY</strong>
+    <span>THE CHEMISTRY OF FLAVOUR</span>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous photo">←</button>
+    <figure>
+      <img id="lightbox-image" src="" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next photo">→</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
